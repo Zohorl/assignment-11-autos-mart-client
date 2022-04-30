@@ -8,7 +8,7 @@ import logo from '../../images/logo.png';
 const Header = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="success" variant="dark">
+            <Navbar collapseOnSelect expand="lg" sticky='top' bg="success" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
                         <img height={40} src={logo} alt="" />
