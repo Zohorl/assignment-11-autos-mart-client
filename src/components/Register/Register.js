@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword, useSendEmailVerification } from 'rea
 import auth from '../../firebase.init';
 import { useUpdateProfile } from 'react-firebase-hooks/auth';
 import Loading from '../Loading/Loading';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -42,7 +43,7 @@ const Register = () => {
 
     return (
         <div className='container w-50 mx-auto'>
-            <h2 className='text-success text-center'>Please Register</h2>
+            <h2 className='text-success text-center'>Please Register Here</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name</Form.Label>
@@ -58,14 +59,14 @@ const Register = () => {
                     <Form.Control type="password" name="password" placeholder="Password" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check className={agree ? 'text-primary' : 'text-danger'} onClick={() => setAgree(!agree)} type="checkbox" name="terms" label="Accepts Health Coach terms and condition" />
+                    <Form.Check className={agree ? 'text-primary' : 'text-danger'} onClick={() => setAgree(!agree)} type="checkbox" name="terms" label="Accepts Autos Mart terms and condition" />
                 </Form.Group>
                 <Button disabled={!agree} variant="success w-50 mx-auto d-block mb-2 fs-5" type="submit">
                     Register
                 </Button>
                 <p className='my-3'>Already have an account? <Link to="/login" onClick={navigateLogin} className='text-primary text-decoration-none'>Please Login</Link> </p>
             </Form>
-            {/* <SocialLogin></SocialLogin> */}
+            {<SocialLogin></SocialLogin>}
         </div>
     );
 };
