@@ -23,10 +23,10 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3 className='fs-1 fw-bold'>Provide Professional Health Coach</h3>
+                        <h3 className='fs-1 fw-bold text-primary'>Dominate The Internet</h3>
                         <div className='fw-bold'>
-                            <p>Health coach provide world class health,Yoga,fitness and nutrition</p>
-                            <p>Certification programs to world class professionals</p>
+                            <p className=''>Attract,Engage,& Convert</p>
+                            <p className='text-info'>More qualified vehicle shoppers</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -37,12 +37,11 @@ const Banner = () => {
                         src={banner2}
                         alt="Second slide"
                     />
-
                     <Carousel.Caption>
-                        <h3 className='fs-1 fw-bold'>Certified Personal Trainers</h3>
+                        <h3 className='fs-1 fw-bold text-primary'>Dominate The Internet</h3>
                         <div className='fw-bold'>
-                            <p>Health coach provide world class health,Yoga,fitness and nutrition</p>
-                            <p>Certification programs to world class professionals</p>
+                            <p className=''>Attract,Engage,& Convert</p>
+                            <p className='text-info'>More qualified vehicle shoppers</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -54,10 +53,10 @@ const Banner = () => {
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h3 className='fs-1 fw-bold'>We support to find a healthy life</h3>
+                        <h3 className='fs-1 fw-bold text-primary'>Dominate The Internet</h3>
                         <div className='fw-bold'>
-                            <p>Health coach provide world class health,Yoga,fitness and nutrition</p>
-                            <p>Certification programs to world class professionals</p>
+                            <p className=''>Attract,Engage,& Convert</p>
+                            <p className='text-info'>More qualified vehicle shoppers</p>
                         </div>
                     </Carousel.Caption>
                 </Carousel.Item>
