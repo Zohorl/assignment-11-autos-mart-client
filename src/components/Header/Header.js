@@ -28,6 +28,7 @@ const Header = () => {
                     <Nav className="ms-auto">
                         <CustomLink to="/items" className="me-3 fs-5">Items</CustomLink>
                         <CustomLink to="/blogs" className="me-3 fs-5">Blogs</CustomLink>
+                        <CustomLink to="/inventory/:id" className="me-3 fs-5">Inventory</CustomLink>
                     </Nav>
                     <Nav>
                         {
