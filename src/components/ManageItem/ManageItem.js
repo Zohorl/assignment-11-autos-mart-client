@@ -9,6 +9,7 @@ const ManageItem = ({ item }) => {
             <h4>Price : ${price}</h4>
             <h5>Supplier : {supplier}</h5>
             <p>{description.length > 100 ? description.slice(0, 100) + ' See More...' : description}</p>
+            <button id='item-btn'>Delete</button>
         </div>
     );
 };
