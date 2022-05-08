@@ -1,0 +1,28 @@
+#single-item {
+    display: flex;
+    border: 1px solid tan;
+    border-radius: 10px;
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+#single-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* mobile responsive */
+@media only screen and (max-width:576px) {
+    #single-item {
+        display: block;
+    }
+}
+
+/* tablet responsive */
+@media only screen and (min-width:577px) and (max-width:992px) {
+    #single-item {
+        display: block;
+    }
+}
