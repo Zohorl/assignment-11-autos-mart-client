@@ -6,7 +6,6 @@ const Inventory = () => {
 
     const [userQuantity, setUserQuantity] = useState(null);
 
-
     const { id } = useParams();
     const [item, setItem] = useState({});
     const navigate = useNavigate();
@@ -18,8 +17,8 @@ const Inventory = () => {
             .then(data => setItem(data))
     }, [item]);
 
-    const navigateToManageInventories = () => {
-        navigate('/additem');
+    const navigateToManageInventory = () => {
+        navigate('/manage/:id');
     };
 
     const quantity = parseInt(item.quantity);
@@ -81,7 +80,7 @@ const Inventory = () => {
                     <h4><small>Quantity</small> : {item.quantity}</h4>
                     <p>{item.description?.length > 150 ? item.description.slice(0, 150) + ' See More...' : item?.description}</p>
                     <button id='item-btn' className='fs-5 mb-2' onClick={handleDelivered}>Delivered</button>
-                    <button id='item-btn' className='fs-5 mb-2' onClick={navigateToManageInventories}>Manage Inventories</button>
+                    <button id='item-btn' className='fs-5 mb-2' onClick={navigateToManageInventory}>Manage Inventories</button>
                 </div>
             </div>
             <div className='d-flex justify-content-center mt-5'>

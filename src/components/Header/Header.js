@@ -33,7 +33,7 @@ const Header = () => {
                     <Nav>
                         {
                             user && <>
-                                <CustomLink to="/additem" className="me-3 fs-5 mt-5">Add Item</CustomLink>
+                                <CustomLink to="/manage" className="me-3 fs-5 mt-5">Manage Inventory</CustomLink>
                             </>
                         }
                         {
